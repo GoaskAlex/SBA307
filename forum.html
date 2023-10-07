@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boot-strap Plug-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="styles.css">
+   
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+ 
+    
+    <title>Send Noods</title>
+
+</head>
+<body>
+    
+    <!--NAVBAR-->
+
+<nav class="navbar navbar-expand-lg bg-warning border-bottom border-5 border-danger">
+    <!--This is wrong--><div class="container-fluid d-flex align-conent-end "><!---comeback to this-->
+        <div class="navbar-brand mx-3"><img src="./images/ramen-logo.png" width="55px"  alt="ramen-logo"></div>
+      <a class="navbar-brand text-uppercase fran-one fs-3" href="index.html"> Send Noods</a>
+
+        <!--Toggle Button for mobile-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <!--Button end--> 
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"><!--align-content-end doesnt work why-->
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Home</a>
+          
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="fa-solid fa-bowl-food"></i></i>Order-up! <span class="badge text-bg-danger">4</span></button><!---TEsting something-->
+          
+          <a class="nav-link" href="login.html"><i class="fa-solid fa-user"></i>My Account</a>
+          <!--Search Bar-->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+    
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!---END-->
+    
+ <!---Subscribe Confirm-->
+    <section>
+        <div class="container-md">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 col-lg-4">
+                <h1 class="display-2">Almost There</h1></div></div>
+            <div class="row justify-content-center align-items-center">
+                <!---Row2-->
+                <div class="col-4 col-lg-4">
+
+                        <div class="card border-danger border-3">
+                        <div class="card-header text-center text-danger">Fan Favorite!</div>
+                        <div class="card-body text-center py-5">
+                            <h4 class="card-title">Greatest Deal</h4>
+                            <p class="lead card-subtitle">Lets Go</p>
+                            <p class="display-4 my-4 text-primary fw-bold">$45.00</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#pricing"class="btn btn-warning btn-lg rounded-pill border border-2 border-danger mt-3">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+                
+                    <!--Subscription Forum-->
+                    <div class="col-4 ">
+                    
+                        <form class="row g-1 border-2 bg-warning border border-4 border-danger rounded">
+                        <div class="col-md-6">
+                          <label for="inputEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword"placeholder="Password"required>
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity"placeholder="City" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>New York</option>
+                            <option>New Jersey</option>
+                            <option>Chicago</option>
+                            <option>Florida</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip" placeholder="Zip" required>
+                        </div>
+                        
+                        <div class="row justify-content-center text-center">
+                        <div class="col-12">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Agreed to Terms
+                            </label>
+                          </div>
+                        </div>
+                        
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Mailing
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#subscribe"class="btn btn-warning btn-md  border border-1 border-danger">Subscribe</a>
+                        </div>
+                    </div>
+                      </form>
+
+
+
+                    <!--End-->
+                </div>
+            
+            
+            
+            <!--image-->
+            <div class="col-4">
+                <img src="/images/chick.png" class="cropping">
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<div class="color-gray position-relative">
+<div class="row justify-content-reverse align-items-center ms-5 mt-2 pt-3">
+    <div class="col-3">
+        <img src="/images/big.png" class="mini">
+    </div>
+    <div class="col-3">
+        <img src="/images/Spicy Ramen.png" class="mini">
+    </div>
+    <div class="col-3">
+        <img src="/images/NeoGeri.png" class="mini">
+    </div>
+    <div class="col-auto">
+        <img src="/images/kim.png" class="mini">
+    </div>
+</div>
+</section>
+
+    
+   
+    
+
+
+
+    
+    
+    
+<footer>                    
+    <div class="container-fluid border-5 border-top border-danger bg-warning">
+        <div class="row align-items-center">
+            <div class="col fran-one fs-3 text-end ">Follow-Us</div>
+            <div class="col">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <i class="fa-brands fa-square-twitter fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!--off canvas content-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+
+    
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Ramen Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group">
+        <li class="list-group-item"><img src="images/big.png" width="20px"> Cup of noodles x 3</li>
+        <li class="list-group-item"><img src="images/ramen-drop.png"width="20px"> Udon x 3</li>
+        <li class="list-group-item"><img src="images/Spicy Ramen.png"width="20px">Soba x 3</li>
+        <li class="list-group-item"><img src="images/Shin.png"width="20px">Shin x 3</li>
+      </ul>
+    
+      <!--<ul class="list-style-none">
+        <li>Cup of noodles x 3</li>
+        <li>Tempera Udon x 3</li>
+        <li>Soba x 3</li>
+        <li>Shin x 3</li>
+    </ul>-->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Icon Plugs-->
+    <script src="https://kit.fontawesome.com/f8254b8fa8.js" crossorigin="anonymous"></script>
+    <!--SCripts For Boot-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+    
+
+    
+</html>

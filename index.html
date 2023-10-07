@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boot-strap Plug-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="styles.css">
+   
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+ 
+    
+    <title>Send Noods</title>
+
+</head>
+<body>
+    
+    <!--NAVBAR-->
+
+<nav class="navbar navbar-expand-lg bg-warning border-bottom border-5 border-danger">
+    <!--This is wrong--><div class="container-fluid d-flex align-conent-end "><!---comeback to this-->
+        <div class="navbar-brand mx-3"><img src="./images/ramen-logo.png" width="55px"  alt="ramen-logo"></div>
+      <a class="navbar-brand text-uppercase fran-one fs-3" href="index.html"> Send Noods</a>
+
+        <!--Toggle Button for mobile-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <!--Button end--> 
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"><!--align-content-end doesnt work why-->
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="fa-solid fa-bowl-food"></i></i>Order-up! <span class="badge text-bg-danger">4</span></button><!---TEsting something-->
+          
+          <a class="nav-link" href="login.html"><i class="fa-solid fa-user"></i>My Account</a>
+          <!--Search Bar-->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+    
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!---END-->
+    
+    <!--Main Image Intro Text aka Hero Image-->
+<section>
+    <div class="container-md">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2">Weeb Love Some Noodles</div>
+                    <div class="display-5 text-muted">Try Some Now</div>
+                </h1>
+                <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit.</p>
+                    <a href="forum.html"class="btn btn-warning btn-lg rounded-pill border border-2 border-danger">Subscribe</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-sm-block">
+                <img class="img-fluid" src="images/ramen-drop.png" alt="ramen-drop">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!---Pricing-->
+<section class="color-gray mt-5 border-top border-5 border-danger">
+    <div class="container-lg position-relative ">
+        <div class="text-center">
+
+            <h2>Pricing Plans</h2>
+            <p class="lead text-muted">Choose your plan that suits you</p>
+          
+            
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+                <!--screen sizes for active^-^-->
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Low Eaters</h4>
+                        <p class="lead card-subtitle">Still Yummi</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$30.00</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="forum.html"class="btn btn-warning btn-lg rounded-pill border border-2 border-danger mt-3">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9 col-lg-4">
+                <div class="card border-danger border-3">
+                    <div class="card-header text-center text-danger">Fan Favorite!</div>
+                    <div class="card-body text-center py-5">
+                        <h4 class="card-title">Greatest Deal!</h4>
+                        <p class="lead card-subtitle">Lets Go</p>
+                        <p class="display-4 my-4 text-primary fw-bold">$45.00</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="forum.html"class="btn btn-warning btn-lg rounded-pill border border-2 border-danger mt-3">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+               
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Eat Like A King</h4>
+                        <p class="lead card-subtitle">Ruler of Ramen</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$60.00</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="forum.html"class="btn btn-warning btn-lg rounded-pill border border-2 border-danger mt-3">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+         <!--Collapse/Table-->   
+         <div class="row align-items-center justify-content-center">
+        <div class="col-4 text-center">
+        <p class="d-inline-flex gap-1">
+            
+            <button class="btn btn-warning border border-2 border-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              View Bundle!
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body"><!--Trying things-->
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Udon</th>
+                        <th scope="col">Ramen</th>
+                        <th scope="col">Instant</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>Noboyaki</td>
+                        <td>Shrimp</td>
+                        <td>Shin</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>GazoUd</td>
+                        <td>Miso</td>
+                        <td>Cup Noodles</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td colspan="1">Tsukemen</td>
+                        <td>Abura Soba</td>
+                        <td>Neo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+         <!--End-->   
+        </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+    
+
+<!--off canvas content-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+
+    
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Ramen Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group">
+        <li class="list-group-item"><img src="images/big.png" width="20px"> Cup of noodles x 3</li>
+        <li class="list-group-item"><img src="images/ramen-drop.png"width="20px"> Udon x 3</li>
+        <li class="list-group-item"><img src="images/Spicy Ramen.png"width="20px">Soba x 3</li>
+        <li class="list-group-item"><img src="images/Shin.png"width="20px">Shin x 3</li>
+      </ul>
+    
+      <!--<ul class="list-style-none">
+        <li>Cup of noodles x 3</li>
+        <li>Tempera Udon x 3</li>
+        <li>Soba x 3</li>
+        <li>Shin x 3</li>
+    </ul>-->
+  </div>
+</div>
+    
+
+
+    
+    
+    
+<footer>                    
+    <div class="container-fluid border-5 border-top border-danger bg-warning">
+        <div class="row align-items-center">
+            <div class="col fran-one fs-3 text-end ">Follow-Us</div>
+            <div class="col">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <i class="fa-brands fa-square-twitter fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Icon Plugs-->
+    <script src="https://kit.fontawesome.com/f8254b8fa8.js" crossorigin="anonymous"></script>
+    <!--SCripts For Boot-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+    
+
+    
+</html>

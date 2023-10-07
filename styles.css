@@ -1,0 +1,40 @@
+i{
+  margin: 0px 6px ;  
+}
+
+
+
+.navbar-nav{
+    font-family:'Francois One', sans-serif;
+    
+}
+
+.color-gray{
+    background-color: darkgrey;
+}
+
+
+
+section{
+    padding:60px 0;
+}
+
+.fran-one{
+    font-family: 'Francois One', sans-serif;
+}
+
+
+
+.cropping{
+width:700px;
+}
+
+.mini{
+    width:100px;
+}
+.bg-img{
+    background-image: url(images/noodles.jpg);
+}
+
+
+
